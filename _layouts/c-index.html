@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% assign current_path_segments = page.path|split:"/"|size %}
+{% assign current_folder = page.path|split:"/"|slice:-2,1 %}
+{% assign children_path_segments = page.path|split:"/"|size|plus:1 %}
+
+<div>
+    Публикации в текущей папке:
+    {% for item in site[page.collection] %}
+    {% assign folder = item.relative_path|split:"/"|slice:-2,1 %}
+    {% if folder == current_folder  and item.path!=page.path %}
+    <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+    {% endif %}
+    {% endfor %}
+</div>
+
+<div>
+    Разделы в текущей папке:
+    {% assign folders = nil %}
+    {% for item in site[page.collection] %}
+    {% assign item_path_segments = item.relative_path|split:"/"|size %}
+    {% if item_path_segments == children_path_segments %}
+    {% assign folder = item.relative_path|split:"/"|slice:-2,1 %}
+    {% if folders contains folder%}{%else%}
+    {% assign folders = folders|append:folder %}
+    <h2><a href="{{ folder }}">{{ folder }}</a></h2>
+    {%endif%}
+    {% endif %}
+    {% endfor %}
+</div>
