@@ -1,0 +1,53 @@
+title: Бодибилдинг и Фитнес в Перми
+description: База знаний по бодибилдингу и фитнесу для жителей Перми
+theme: just-the-docs
+url: https://your-username.github.io/bb-source
+
+# Aux links for the upper right navigation
+aux_links:
+  "View on GitHub":
+    - "https://github.com/your-username/bb-source"
+
+# Makes Aux links open in a new tab
+aux_links_new_tab: true
+
+# Whether to show the "Edit this page on GitHub" link
+gh_edit_link: true
+gh_edit_link_text: "Редактировать на GitHub"
+gh_edit_repository: "https://github.com/your-username/bb-source"
+gh_edit_branch: main
+gh_edit_view_mode: "tree"
+
+# Footer content
+footer_content: "Copyright &copy; 2024. База знаний по бодибилдингу и фитнесу для Перми."
+
+# Color scheme currently only supports "light" (default) and "dark"
+color_scheme: light
+
+# Enable search
+search_enabled: true
+search_tokenizer_separator: /[\s\-\.]+/
+
+# Organize collections by folders
+collections:
+  exercises:
+    permalink: "/:collection/:path/"
+    output: true
+  nutrition:
+    permalink: "/:collection/:path/"
+    output: true
+  training:
+    permalink: "/:collection/:path/"
+    output: true
+  physiology:
+    permalink: "/:collection/:path/"
+    output: true
+  pharmacology:
+    permalink: "/:collection/:path/"
+    output: true
+  first_aid:
+    permalink: "/:collection/:path/"
+    output: true
+  local_resources:
+    permalink: "/:collection/:path/"
+    output: true 
