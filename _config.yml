@@ -1,11 +1,21 @@
-title: Бодибилдинг и Фитнес в Перми
-description: База знаний по бодибилдингу и фитнесу для жителей Перми
+# This file contains the basic configuration to create your own jekyll site using the BB theme.
+
+# Basic Settings
+title: BB Jekyll Theme
+email: your-email@domain.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://aqwantonio.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: aqwantonio # your github username
 theme: just-the-docs
-url: https://your-username.github.io/bb-source
+lang: ru-RU
 
 # Aux links for the upper right navigation
 aux_links:
-  "View on GitHub":
+  "Просмотреть на GitHub":
     - "https://github.com/your-username/bb-source"
 
 # Makes Aux links open in a new tab
@@ -28,26 +38,29 @@ color_scheme: light
 search_enabled: true
 search_tokenizer_separator: /[\s\-\.]+/
 
-# Organize collections by folders
+# Collections
 collections:
-  exercises:
-    permalink: "/:collection/:path/"
+  vidy-uprazhneniy:
     output: true
-  nutrition:
-    permalink: "/:collection/:path/"
+    permalink: /:collection/:path/
+  vse-o-fitnese:
     output: true
-  training:
-    permalink: "/:collection/:path/"
+    permalink: /:collection/:path/
+  o-bodibildinge:
     output: true
-  physiology:
-    permalink: "/:collection/:path/"
+    permalink: /:collection/:path/
+  pitanie-i-dieta:
     output: true
-  pharmacology:
-    permalink: "/:collection/:path/"
+    permalink: /:collection/:path/
+  programmy-trenirovok:
     output: true
-  first_aid:
-    permalink: "/:collection/:path/"
+    permalink: /:collection/:path/
+  farmakologiya:
     output: true
-  local_resources:
-    permalink: "/:collection/:path/"
-    output: true 
+    permalink: /:collection/:path/
+  fiziologiya:
+    output: true
+    permalink: /:collection/:path/
+  pervaya-pomoshch-travmy:
+    output: true
+    permalink: /:collection/:path/ 
